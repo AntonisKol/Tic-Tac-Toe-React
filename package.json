@@ -1,4 +1,4 @@
-{"homepage":"http://AntonisKol.github.io/Tic-Tac-Toe-with-Auth-fe",
+{"homepage":"https://AntonisKol.github.io/Tic-Tac-Toe-with-Auth-fe",
   "name":"fe",
   "version":"0.1.0",
   "private":true,
@@ -14,18 +14,17 @@
   "web-vitals":"^1.1.2"},
 "scripts":{
   "start":"react-scripts start",
-  "predeploy":"npm run build",
-  "deploy":"gh-pages -d build",
   "build":"react-scripts build",
   "test":"react-scripts test",
-  "eject":"react-scripts eject" 
+  "eject":"react-scripts eject",
+  "predeploy":"npm run build",
+  "deploy":"gh-pages -d build" 
  },
 "eslintConfig":{
   "extends":["react-app",
   "react-app/jest"]},
 
 "browserslist":{
-
   "production":[">0.2%",
   "not dead",
   "not op_mini all"],

@@ -1,9 +1,6 @@
 import Game from './components/Game';
 import Auth from  './pages/Auth'
-
 import { Switch, Route } from 'react-router-dom'
-
-
 import './App.css';
 
 function App() {
