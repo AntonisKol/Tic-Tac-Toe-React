@@ -98,20 +98,19 @@ if(typeof(items) =='object' && items.length > 0){
 
     <div className="App">
       <h1>Shopping List</h1>
-      <form  className="form" 
-             onSubmit={formSubmitHandler}>
-
+    <form className="form" 
+          onSubmit={formSubmitHandler}>
     <input required 
           placeholder='Product'
-           value={form.product} 
-           onChange= {(e) => fillForm(e, 'product')}/>
-<input required 
+          value={form.product} 
+          onChange= {(e) => fillForm(e, 'product')}/>
+    <input required 
           placeholder='Quantity'
-           value={form.quantity} 
-           onChange= {(e) => fillForm(e, 'quantity')}/>
+          value={form.quantity} 
+          onChange= {(e) => fillForm(e, 'quantity')}/>
     <button  
             type="submit" 
-             className='create-button'>Add Item</button>
+            className='create-button'>Add Item</button>
     </form>
     <section className='shopping-list'>
       {products} 
@@ -119,5 +118,4 @@ if(typeof(items) =='object' && items.length > 0){
     </div>
   );
 }
-
 export default Items;

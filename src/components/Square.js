@@ -1,7 +1,4 @@
-
-
 const style = {
-
     background: 'darkGrey',
     border: '2px solid black',
     fontSize: '30px',
@@ -9,11 +6,9 @@ const style = {
     cursor: 'pointer',
     outline: 'none'
 }
-
 const Square = ({ value, onClick }) => (
-       <button style ={style} onClick={onClick}>
-           {value}
-       </button>
+    <button style ={style} onClick={onClick}>
+    {value}
+    </button>
 )
-
 export default Square
