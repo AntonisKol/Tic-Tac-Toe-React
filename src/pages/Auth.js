@@ -14,8 +14,8 @@ function Auth (props) {
         data.email = e.target[0].value;
         data.pass = e.target[1].value;
 
-        let urlRegister = 'http://localhost:8080/auth/register';
-        let urlLogin = 'http://localhost:8080/auth/login';
+        let urlRegister = 'https://dashboard.heroku.com/apps/tictactoe-auth/auth/register';
+        let urlLogin = 'https://dashboard.heroku.com/apps/tictactoe-auth/auth/login';
         let options = {
             method:'POST', 
             headers: {
