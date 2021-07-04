@@ -32,7 +32,7 @@ function Items() {
  const formSubmitHandler = (e) => {
    e.preventDefault();
 
-    const  url = 'https://dashboard.heroku.com/apps/tictactoe-auth/items/new';
+    const  url = 'https://tictactoe-auth.herokuapp.com/items/new';
     const options = {
       method: "POST",
       headers,
@@ -42,7 +42,7 @@ function Items() {
  }
 
  useEffect(() => {
-  const url ='https://dashboard.heroku.com/apps/tictactoe-auth/items/all';
+  const url ='https://tictactoe-auth.herokuapp.com/items/all';
   const options = {
     headers 
   }
@@ -58,7 +58,7 @@ function Items() {
 
 const deleteItemHandler = (id) => {
 
-  const url ='https://dashboard.heroku.com/apps/tictactoe-auth/items/'+ id;
+  const url ='https://tictactoe-auth.herokuapp.com/items/'+ id;
   const options = {
     method: "DELETE",
     headers

@@ -14,8 +14,8 @@ function Auth (props) {
         data.email = e.target[0].value;
         data.pass = e.target[1].value;
 
-        let urlRegister = 'https://dashboard.heroku.com/apps/tictactoe-auth/auth/register';
-        let urlLogin = 'https://dashboard.heroku.com/apps/tictactoe-auth/auth/login';
+        let urlRegister = 'https://tictactoe-auth.herokuapp.com/auth/register';
+        let urlLogin = 'https://tictactoe-auth.herokuapp.com/auth/login';
         let options = {
             method:'POST', 
             headers: {
@@ -46,7 +46,6 @@ function Auth (props) {
                 })); 
         }
     }
-
     return (
         <div className = "wrapper">
             <form onSubmit = {submitHandler}>
@@ -60,6 +59,4 @@ function Auth (props) {
         </div>
     )
 }
-
-
 export default Auth;
