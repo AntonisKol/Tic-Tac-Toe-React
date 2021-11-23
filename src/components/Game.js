@@ -34,22 +34,22 @@ const Game = () => {
     }
 
     const renderMoves = () => (
-         history.map((_step, move) => {//the _ because I don't use the steps
-             const destination = move ? `Go to move${move}` : "Go to start"//renders so we jump back and forth in time
-                 return (
-                     <li key={move}>
-                         <button onClick={() => jumpTo(move)}>{destination}</button>
-                     </li>
-                 )
-            })
-    )
-         return (
-        <>
-        <Board squares={history[stepNumber]} onClick={handleClick}/>
-          <div styles={styles}>
-            <p>{winner ? 'Winner: ' + winner : 'Next Player: ' + (xIsNext ? 'X' : 'O')}</p>
-           {renderMoves()}
-          </div>
+        history.map((_step, move) => {//the _ because I don't use the steps
+            const destination = move ? `Go to move${move}` : "Go to start"//renders so we jump back and forth in time
+                return (
+                    <li key={move}>
+                        <button onClick={() => jumpTo(move)}>{destination}</button>
+                    </li>
+                )
+        })
+)
+        return (
+    <>
+    <Board squares={history[stepNumber]} onClick={handleClick}/>
+        <div styles={styles}>
+        <p>{winner ? 'Winner: ' + winner : 'Next Player: ' + (xIsNext ? 'X' : 'O')}</p>
+        {renderMoves()}
+        </div>
         </>   
     )
 }
